@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: #ebf3e8;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #86a789;
+  background-size: cover;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+h2 a {
+  margin-left: 50px;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ebf3e8;
+}
+
+nav a:hover {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+main {
+  padding: 20px;
+  /* display: flex; */
+  gap: 1.5rem;
+}
+
+h3 a {
+  justify-items: center;
+}
+
+p,
+h1,
+h2,
+h3 {
+  color: #86a789;
+}
+
+#sugarglider,
+#classicgrey,
+#whiteFace,
+#mozaik,
+#leucistic,
+#platinum,
+#creamino,
+#albino {
+  width: 30%;
+}
+
+#whatsapp,
+#instagram {
+  width: 50px;
+}
+.logo {
+  width: 150px;
+}
+
+.whastapp,
+.instagram {
+  display: flex;
+  gap: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.contentSG,
+.cg,
+.wf,
+.moza,
+.leu,
+.plat,
+.cream,
+.albino {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 0.375rem; /* 6px */
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.dropdown {
+  visibility: hidden;
+  display: none;
+}
+
+figure img {
+  width: 150px;
+}
+
+@media screen and (max-width: 1200px) {
+  .title,
+  .content-image {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    justify-content: center;
+    display: flex;
+  }
+
+  .titleCg,
+  .classicgrey,
+  .titleWf,
+  .whiteface,
+  .titleMoza,
+  .mozaik,
+  .titleLeu,
+  .leucistic,
+  .titlePlat,
+  .platinum,
+  .titleCream,
+  .creamino,
+  .titleAlbino,
+  .albinoImg {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dropdown {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homeImg {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul {
+    visibility: hidden;
+  }
+  .dropbtn {
+    width: 50px;
+  }
+
+  .dropbtn:hover,
+  .dropbtn:focus {
+    opacity: 0.5;
+  }
+
+  .btndrop {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .dropdown {
+    position: relative;
+    display: flex;
+    /* display: inline-block; */
+    visibility: visible;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #b2c8ba;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown a:hover {
+    background-color: #d2e3c8;
+  }
+
+  .show {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
